@@ -6,26 +6,26 @@
 name=CentOS-4.0 - Base
 baseurl=http://vault.centos.org/4.0/os/i386/
 gpgcheck=1
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-4
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-4
 enabled=1
 
 [C4.0-updates]
 name=CentOS-4.0 - Updates
 baseurl=http://vault.centos.org/4.0/updates/i386/
 gpgcheck=1
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-4
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-4
 enabled=1
 
 [C4.0-extras]
 name=CentOS-4.0 - Extras
 baseurl=http://vault.centos.org/4.0/extras/i386/
 gpgcheck=1
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-4
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-4
 enabled=1
 
 [C4.0-centosplus]
 name=CentOS-4.0 - CentOSPlus
 baseurl=http://vault.centos.org/4.0/centosplus/i386/
 gpgcheck=1
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-4
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-4
 enabled=1

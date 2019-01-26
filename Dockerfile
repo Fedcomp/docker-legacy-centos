@@ -8,7 +8,7 @@ RUN rm -rvf /etc/yum.repos.d/*
 COPY ./CentOS-Vault.repo /etc/yum.repos.d/
 RUN yum -y --installroot=/mnt install centos-release yum
 
-# ------- Chroot into centos 4.9 without package database -------
+# ------- Chroot into centos 4.9 WITHOUT package database -------
 FROM scratch
 COPY --from=0 /mnt /
 
@@ -28,7 +28,7 @@ RUN mkdir -p /mnt/var/lock/rpm/
 # Install clear system with working package database
 RUN yum -y --installroot=/mnt install centos-release yum
 
-# # ------- Chroot into centos 4.9 without package database -------
+# # ------- Chroot into centos 4.9 WITH package database -------
 FROM scratch
 COPY --from=1 /mnt /
 
